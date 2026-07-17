@@ -32,5 +32,10 @@ addLayer("S", {
             desc: "Double PL gain.",
             cost: newDecimal(1)
         }
+        12: {
+            title: "One and a half up...?"
+            desc: "Multiplies PL gain by 1.5"
+            cost: new.Decimal(2)
+        }
     }
 })
