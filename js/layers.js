@@ -16,6 +16,7 @@ addLayer("S", {
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         if (hasUpgrade('S', 11)) mult = mult.times(2)
+        if (hasUpgrade('S', 12)) mult = mult.times(1.5)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -31,10 +32,10 @@ addLayer("S", {
             title: "Double up!",
             desc: "Double PL gain.",
             cost: newDecimal(1)
-        }
+        },
         12: {
-            title: "One and a half up...?"
-            desc: "Multiplies PL gain by 1.5"
+            title: "One and a half up...?",
+            desc: "Multiplies PL gain by 1.5",
             cost: new.Decimal(2)
         }
     }
